@@ -14,9 +14,6 @@ import numpy as np
 
 
 class SegmentSortedArray:
-    
-
-
 
     def __init__(self, A):
         if not isinstance(A, list):
@@ -27,17 +24,17 @@ class SegmentSortedArray:
         self.insertionPoints = []
         findInsertPoints()
 
-    def setSamplingSize():
+    def setSamplingSize(self):
         self.sampling_size = (self.size // np.log(size))
         return this.sampling_size
 
 
-    def findInsertionPoints():
+    def findInsertionPoints(self):
         self.sample_size = self.size // self.sampling_size
         for i in range(1, self.sample_size + 1):
             self.insertionPoints.append((A[self.sampling_size * i], self.sampling_size * i))
     
-    def insert(element):
+    def insert(self, element):
         for insertPoint in enumerate(self.insertionPoints):
             if element > insertPoint[1][0]:
                 self.internal_array.insert(insertPoint[1][1]], element)
@@ -52,3 +49,5 @@ class SegmentSortedArray:
                 pass
         self.internal_array.append(element)
         self.size += 1
+
+    def 
