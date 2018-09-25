@@ -108,3 +108,5 @@ for i in np.arange(0,15):
     print("Inserting: "+ str(rInt))
     segArray.insert(rInt)
     print("Array after insert: " + str(segArray.internal_array))
+
+print("testing complete")
